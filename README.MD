@@ -6,7 +6,16 @@
 
 ### winrm 远程管理
 
+服务端执行`powershell.exe  -file  winrmconfig.ps1`
 
+1. 在服务器端运行`winrm set winrm/config/client @{TrustedHosts="RemoteComputerName"}` 命令前，需要先设置winrm接受请求，开始运行 cmd后，输入`winrm quickconfig`，然后输入y，同意，再配置上面的winrm set命令
+2. 我们回到客户端，我们右键，选择powershell，输入：
+　　`Set-Item wsman:\localhost\Client\TrustedHosts server01 -Concatenate -Force`
+
+
+### Hyper-V Remote Management Configuration Utility (HVRemote)
+
+[参考msdn](https://code.msdn.microsoft.com/Hyper-V-Remote-Management-26d127c6)
 
 ### sysprep
 
