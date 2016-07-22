@@ -4,6 +4,12 @@
 
 ## Hyper-v scripts
 
+### winrm 远程管理
+
+
+
+### sysprep
+
 adksetup.exe
 提供安装WSIM windows镜像管理器，可以制作unattend无人值守安装的应答文件。
 
@@ -11,9 +17,11 @@ sysprep_unattended_template.xml
 应答文件模板
 
 命令行sysprep方法：
-`C:\Windows\System32\sysprep>`
 
-`sysprep /generalize /oobe /unattend:sysprep_unattended_template.xml /shutdown`
+```bat
+cd C:\Windows\System32\sysprep>
+sysprep /generalize /oobe /unattend:sysprep_unattended_template.xml /shutdown
+```
 
 **注**
 
