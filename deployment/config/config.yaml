@@ -1,0 +1,13 @@
+
+tomcat:
+    home: $CATALINA_HOME
+apps:
+    dir: []
+    war: []
+    url: []
+email:
+    server: smtp.xxx.com
+    port: 25
+    from_addr: xxx@xxx.com
+    password: xxx
+    to_addr: []
