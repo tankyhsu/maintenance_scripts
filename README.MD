@@ -12,6 +12,9 @@
 2. 我们回到客户端，我们右键，选择powershell，输入：
 　　`Set-Item wsman:\localhost\Client\TrustedHosts server01 -Concatenate -Force`
 
+### 虚拟机运维脚本
+
+hyper-v文件夹下其余内容
 
 ### Hyper-V Remote Management Configuration Utility (HVRemote)
 
