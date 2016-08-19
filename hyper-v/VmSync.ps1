@@ -10,7 +10,7 @@ for($i=1;$i -le $VMs.Count;$i++)
     $SystemSettingData = $VM.getRelated("Msvm_VirtualSystemSettingData")
     $Processor=$SystemSettingData.getRelated("Msvm_ProcessorSettingData")| where{$_.ResourceType -eq 3}
     $Memory=$SystemSettingData.getRelated("Msvm_MemorySettingData") | where{$_.ResourceType -eq 4}| select -first 1
-    $VHD=$SystemSettingData.getRelated("MSVM_StorageAllocationSettingData") | where{$_.ResourceType -eq 31}
+    #$VHD=$SystemSettingData.getRelated("MSVM_StorageAllocationSettingData") | where{$_.ResourceType -eq 31}
 
     $config |add-member NoteProperty displayName $VM.ElementName
     $config |add-member NoteProperty machineId $VM.Name
